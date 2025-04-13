@@ -1,0 +1,65 @@
+<!--pages/self/self.wxml-->
+<view class="container">
+  <!-- 地图区域 -->
+  <view class="map-container">
+    <image 
+      class="map-image" 
+      src="https://s2.loli.net/2024/12/23/6Dsn9xzgORtKkIS.png"
+      mode="aspectFit"
+      id="mapImage"
+    />
+  </view>
+
+  <!-- 图片滚动区域 -->
+  <view class="image-carousel">
+    <swiper class="swiper-container" autoplay="true" interval="3000" circular="true">
+      <swiper-item>
+        <image class="carousel-image" src="https://s2.loli.net/2024/12/24/j5yJbvENFWro8CR.jpg" />
+      </swiper-item>
+      <swiper-item>
+        <image class="carousel-image" src="https://s2.loli.net/2024/12/24/JaB5thxgrPqFIpd.jpg" />
+      </swiper-item>
+      <swiper-item>
+        <image class="carousel-image" src="https://s2.loli.net/2024/12/24/15pwv9sBVAUzh6K.jpg" />
+      </swiper-item>
+      <swiper-item>
+        <image class="carousel-image" src="https://s2.loli.net/2024/12/24/3nz5oHYGbefXdxS.jpg" />
+      </swiper-item>
+      <swiper-item>
+        <image class="carousel-image" src="https://s2.loli.net/2024/12/24/ZCgxA3mSQwvprTh.jpg" />
+      </swiper-item>
+      <swiper-item>
+        <image class="carousel-image" src="https://s2.loli.net/2024/12/24/E2lOXzq7PaNGeh9.jpg" />
+      </swiper-item>
+      <swiper-item>
+        <image class="carousel-image" src="https://s2.loli.net/2024/12/24/dZQm9qWr8n7KOG4.jpg" />
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <!-- 视频播放区域 -->
+  <view class="video-container">
+    <video 
+      class="video-player" 
+      src="{{currentVideo.src}}" 
+      controls
+      autoplay
+    />
+  </view>
+
+  <!-- 视频列表 -->
+  <view class="video-list">
+    <text class="video-title">在线视频列表：</text>
+    <view class="video-items">
+      <block wx:for="{{videos}}" wx:key="id">
+        <view 
+          class="video-item" 
+          bindtap="onVideoSelect" 
+          data-src="{{item.src}}" 
+          data-title="{{item.title}}">
+          {{item.title}}
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

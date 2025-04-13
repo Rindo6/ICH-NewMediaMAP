@@ -1,0 +1,59 @@
+{
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "postcss": true,
+    "minified": true,
+    "newFeature": true,
+    "autoAudits": false,
+    "nodeModules": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    }
+  },
+  "appid": "wxccd478fea44744df",
+  "projectname": "ICH-NewMediaMap",
+  "libVersion": "3.7.2",
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "全部内容",
+          "pathName": "pages/list/list",
+          "query": ""
+        },
+        {
+          "name": "非遗详情",
+          "pathName": "pages/info/info",
+          "query": "id=XE0cj8DR1TiNzjpY",
+          "scene": null
+        },
+        {
+          "name": "新增数据",
+          "pathName": "pages/add/add",
+          "query": ""
+        },
+        {
+          "name": "搜索页面",
+          "pathName": "pages/search/search",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "compileType": "miniprogram",
+  "srcMiniprogramRoot": "miniprogram/",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
+}

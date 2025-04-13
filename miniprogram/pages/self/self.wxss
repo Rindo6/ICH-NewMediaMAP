@@ -1,0 +1,85 @@
+/* pages/self/self.wxss */
+/* 全局容器 */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+/* 地图区域 */
+.map-container {
+  width: 100%;
+  height: 60vh; /* 设置地图高度为屏幕的60% */
+  position: relative;
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 图片滚动组件 */
+.image-carousel {
+  width: 100%;
+  height: 300px; /* 设置图片滚动区域的高度 */
+  margin-top: 20px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* 保证竖屏图片自适应显示 */
+  border-radius: 10px; /* 可以加一些圆角效果，提升UI美观 */
+}
+
+/* 视频组件 */
+.video-container {
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+}
+
+.video-player {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+/* 视频列表部分 */
+.video-list {
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.video-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.video-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  text-align: center;
+}
+
+.video-item:hover {
+  background-color: #e0e0e0;
+}

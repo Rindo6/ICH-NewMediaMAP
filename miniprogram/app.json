@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/self/self",
+    "pages/map/map",
+    "pages/list/list",
+    "pages/info/info",
+    "pages/add/add",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云南省非物质文化遗产地图",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/self/self",
+        "iconPath": "images/drawMap.png",
+        "selectedIconPath": "images/current.png",
+        "text": "主题概览"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "iconPath": "images/interMap.png",
+        "selectedIconPath": "images/current.png",
+        "text": "互动地图"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你提供的位置信息将用于添加POI点"
+    }
+  }
+}

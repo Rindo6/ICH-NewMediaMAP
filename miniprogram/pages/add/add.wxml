@@ -1,0 +1,25 @@
+<form report-submit='true' onsubmit="createItem">
+  <view class='desc'>位置设定</view>
+  <view class="loactionGroup">
+    <button bindtap='chooseLocation' type='primary'>地图选址</button>
+  </view>
+  <view class='desc'>非遗名称设定</view>
+  <input placeholder='请输入此项非遗的名称' name="title" value='{{name}}'></input>
+  <view class='desc'>地址设定</view>
+  <input placeholder='添加详细位置信息' name="address" value='{{address}}'></input>
+  <view class='desc'>类别设定</view>
+  <input placeholder='如工艺、音乐、舞蹈、美术、戏剧等' name="contact" value='{{phone}}'></input>
+  <view class='desc'>申遗时间</view>
+  <input placeholder='添加申遗日期，格式xxxx年xx月xx日' name="price_per" value='{{price_per}}'></input>
+  <view class='desc'>关键词设定</view>
+  <input placeholder='如口述文学、工艺、音乐、舞蹈、美术、戏剧等' name="keywords" value='{{price_per}}'></input>
+  <view class='desc'>非遗介绍</view>
+  <textarea placeholder='添加概况和详细信息' maxlength="-1" name="notes" value="{{notes}}"></textarea>
+  <view class='desc'>视频链接</view>
+  <textarea placeholder='添加相关视频链接' name="video_url" value="{{video_url}}"></textarea>
+  <view class='desc'>主观评分（0-5星）</view>
+  <slider min="1" max="5" show-value name="star" value="3"></slider>
+  <view class='desc'>图片集(支持多张轮播)</view>
+  <button bindtap='uploadImage'>点此选择照片</button>
+  <button class='submit' type="primary" form-type='submit'>创建</button>
+</form>
